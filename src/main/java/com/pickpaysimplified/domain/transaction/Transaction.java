@@ -1,6 +1,7 @@
 package com.pickpaysimplified.domain.transaction;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import com.pickpaysimplified.domain.user.User;
 
@@ -35,4 +36,6 @@ public class Transaction {
     @ManyToOne
     @JoinColumn(name = "payee_id")
     private User payee;
+
+    private LocalDateTime temeStamp;
 }
