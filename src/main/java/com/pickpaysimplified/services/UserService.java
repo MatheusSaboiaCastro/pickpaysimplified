@@ -14,7 +14,7 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public void validateTransaction(User payer, BigDecimal amount, String transactionId) throws Exception {
+    public void validateTransaction(User payer, BigDecimal amount) throws Exception {
         if (payer.getUserType() == UserType.MERCHANT) {
             throw new Exception("Only personal users can make transactions.");
         }
