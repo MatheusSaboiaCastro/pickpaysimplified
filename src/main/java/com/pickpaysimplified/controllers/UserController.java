@@ -29,8 +29,8 @@ public class UserController {
         return new ResponseEntity<User>(newUser, HttpStatus.CREATED);
     }
 
-    @GetMapping("path")
-    public ResponseEntity<List<User>> getAllUsers(@RequestParam String path) {
+    @GetMapping
+    public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = this.userService.getAllUsers();
 
         return new ResponseEntity<>(users, HttpStatus.OK);

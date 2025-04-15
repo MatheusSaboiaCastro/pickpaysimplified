@@ -1,6 +1,6 @@
 package com.pickpaysimplified.domain.user;
 
 public enum UserType {
-    COMMOM,
+    COMMON,
     MERCHANT
 }
