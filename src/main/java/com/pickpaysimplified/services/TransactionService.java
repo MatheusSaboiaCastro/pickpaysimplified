@@ -72,7 +72,7 @@ public class TransactionService {
         Map<String, Object> data = (Map<String, Object>) body.get("data");
 
         if (body.get("status").equals("success")) {
-            return (boolean) data.get("authorized");
+            return (boolean) data.get("authorization");
         } else {
             return false;
         }
